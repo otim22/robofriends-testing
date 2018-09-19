@@ -7,4 +7,3 @@ To run the project:
 3. Run `npm start`
 4. Run tests with `npm test` -- you may have to press "a" to run all tests
 
-# robofriends-testing
