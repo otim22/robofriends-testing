@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class CounterButton extends Component {
   constructor(props) {
@@ -8,24 +8,24 @@ class CounterButton extends Component {
     };
   }
 
-  shouldComponentUpdate(nextProps, 
-                        nextState) {
+  shouldComponentUpdate(nextProps, nextState) {
     if (this.state.count !== nextState.count) {
-               return true;
+      return true;
     }
     return false;
   }
 
   render() {
-        return (
+    return (
       <button
-        id='counter'
+        id="counter"
         color={this.props.color}
-        onClick={() => this.setState(state => ({count: state.count + 1}))}>
+        onClick={() => this.setState(state => ({ count: state.count + 1 }))}
+      >
         Count: {this.state.count}
       </button>
     );
   }
 }
 
-export default CounterButton
+export default CounterButton;
